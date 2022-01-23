@@ -141,17 +141,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ascomycetes.cpp" />
+    <ClCompile Include="Basidiomycetes.cpp" />
+    <ClCompile Include="Deuteromycetes.cpp" />
     <ClCompile Include="Mushrooms.cpp" />
     <ClCompile Include="Mushroom_like.cpp" />
     <ClCompile Include="Oomycetes.cpp" />
     <ClCompile Include="Really_mushroom.cpp" />
+    <ClCompile Include="Zygomycetes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ascomycetes.h" />
+    <ClInclude Include="Basidiomycetes.h" />
+    <ClInclude Include="Deuteromycetes.h" />
     <ClInclude Include="Mushrooms.h" />
     <ClInclude Include="Mushroom_like.h" />
     <ClInclude Include="Oomycetes.h" />
     <ClInclude Include="Really_mushroom.h" />
+    <ClInclude Include="Zygomycetes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

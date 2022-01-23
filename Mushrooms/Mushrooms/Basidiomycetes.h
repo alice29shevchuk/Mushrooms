@@ -1,14 +1,14 @@
 #pragma once
 #include"Really_mushroom.h"
-class Ascomycetes:public Really_mushroom
+class Basidiomycetes:public Really_mushroom
 {
 	std::string mycelium;
 	std::string substances_in_cell_wall;
 public:
-	Ascomycetes()
+	Basidiomycetes()
 	{
-		this->name = "Ascomycetes";
-		this->stipe = 3;
+		this->name = "Basidiomycetes";
+		this->stipe = 4;
 		this->poison = false;
 		this->presence_of_chitin = true;
 		this->mycelium = "Многоклеточный";
@@ -48,7 +48,7 @@ public:
 	}
 	virtual void print()
 	{
-		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nМицелий: " << this->mycelium << "\nВещества в клеточной стенке: "<<this->substances_in_cell_wall<<"\n";
+		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nМицелий: " << this->mycelium << "\nВещества в клеточной стенке: " << this->substances_in_cell_wall << "\n";
 	}
 };
 

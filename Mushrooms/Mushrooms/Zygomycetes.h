@@ -1,18 +1,18 @@
 #pragma once
 #include"Really_mushroom.h"
-class Ascomycetes:public Really_mushroom
+class Zygomycetes:public Really_mushroom
 {
 	std::string mycelium;
 	std::string substances_in_cell_wall;
 public:
-	Ascomycetes()
+	Zygomycetes()
 	{
-		this->name = "Ascomycetes";
+		this->name = "Zygomycetes";
 		this->stipe = 3;
 		this->poison = false;
 		this->presence_of_chitin = true;
-		this->mycelium = "Многоклеточный";
-		this->substances_in_cell_wall = "Хитин и глюкан";
+		this->mycelium = "Неклеточный";
+		this->substances_in_cell_wall = "Хитин и хитозан";
 	}
 	std::string getName()
 	{
@@ -48,7 +48,8 @@ public:
 	}
 	virtual void print()
 	{
-		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nМицелий: " << this->mycelium << "\nВещества в клеточной стенке: "<<this->substances_in_cell_wall<<"\n";
+		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nМицелий: " << this->mycelium << "\nВещества в клеточной стенке: " << this->substances_in_cell_wall << "\n";
 	}
 };
+
 
