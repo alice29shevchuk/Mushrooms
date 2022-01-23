@@ -24,6 +24,7 @@
     <ProjectGuid>{43ee286e-f88e-44eb-8ce7-daa8e16aa68a}</ProjectGuid>
     <RootNamespace>Mushrooms</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Mushrooms</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,6 +141,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Mushrooms.cpp" />
+    <ClCompile Include="Mushroom_like.cpp" />
+    <ClCompile Include="Oomycetes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mushrooms.h" />
+    <ClInclude Include="Mushroom_like.h" />
+    <ClInclude Include="Oomycetes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
