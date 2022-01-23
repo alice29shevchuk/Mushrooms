@@ -46,7 +46,7 @@ public:
 	}
 	virtual void print()
 	{
-		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nНаличие синцития: "<<proverkaPresence_of_syncytium()<<"\n";
+		std::cout << "\n\t\t\tНазвание: " << this->name << "\n\t\t\tДлина ножки: " << this->stipe << "\n\t\t\tЯдовитость: " << proverkaPoison() << "\n\t\t\tНаличие хитина: " << proverkaPresence_of_chitin() << "\n\t\t\tНаличие синцития: "<<proverkaPresence_of_syncytium()<<"\n========================================================================================================================";
 	}
 };
 

@@ -48,7 +48,7 @@ public:
 	}
 	virtual void print()
 	{
-		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nМицелий: " << this->mycelium << "\nВещества в клеточной стенке: " << this->substances_in_cell_wall << "\n";
+		std::cout << "\n\t\t\tНазвание: " << this->name << "\n\t\t\tДлина ножки: " << this->stipe << "\n\t\t\tЯдовитость: " << proverkaPoison() << "\n\t\t\tНаличие хитина: " << proverkaPresence_of_chitin() << "\n\t\t\tМицелий: " << this->mycelium << "\n\t\t\tВещества в клеточной стенке: " << this->substances_in_cell_wall << "\n========================================================================================================================";
 	}
 };
 
