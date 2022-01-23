@@ -1,16 +1,16 @@
 #pragma once
 #include"Mushrooms.h"
-class Mushroom_like:public Mushrooms
+class Really_mushroom:public Mushrooms
 {
 protected:
 	bool presence_of_chitin;
 public:
-	Mushroom_like()
+	Really_mushroom()
 	{
-		this->name = "Mushroom_Like";
-		this->stipe = 3;
-		this->poison = true;
-		this->presence_of_chitin = false;
+		this->name = "Really_mushroom";
+		this->stipe = 6;
+		this->poison = false;
+		this->presence_of_chitin = true;
 	}
 	std::string getName()
 	{
@@ -38,7 +38,7 @@ public:
 	}
 	virtual void print()
 	{
-		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: "<<proverkaPresence_of_chitin()<<"\n";
+		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\n";
 	}
 };
 

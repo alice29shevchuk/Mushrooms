@@ -9,7 +9,7 @@ public:
 		this->name = "Oomycetes";
 		this->stipe = 4;
 		this->poison = true;
-		this->presence_of_taxa = true;
+		this->presence_of_chitin = false;
 		this->presence_of_syncytium = true;
 	}
 	std::string getName()
@@ -24,9 +24,9 @@ public:
 	{
 		return this->poison;
 	}
-	bool getPresence_of_taxa()
+	bool getPresence_of_chitin()
 	{
-		return this->presence_of_taxa;
+		return this->presence_of_chitin;
 	}
 	bool getPresence_of_syncytium()
 	{
@@ -36,9 +36,9 @@ public:
 	{
 		return (getPoison() == true) ? "Ядовитые" : "Неядовитые";
 	}
-	std::string proverkaPresence_of_taxa()
+	std::string proverkaPresence_of_chitin()
 	{
-		return (getPresence_of_taxa() == true) ? "Есть таксоны" : "Нет такснов";
+		return (getPresence_of_chitin() == true) ? "Есть хитин" : "Нет хитина";
 	}
 	std::string proverkaPresence_of_syncytium()
 	{
@@ -46,7 +46,7 @@ public:
 	}
 	virtual void print()
 	{
-		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие таксонов: " << proverkaPresence_of_taxa() << "\nНаличие синцития: "<<proverkaPresence_of_syncytium()<<"\n";
+		std::cout << "\nНазвание: " << this->name << "\nДлина ножки: " << this->stipe << "\nЯдовитость: " << proverkaPoison() << "\nНаличие хитина: " << proverkaPresence_of_chitin() << "\nНаличие синцития: "<<proverkaPresence_of_syncytium()<<"\n";
 	}
 };
 

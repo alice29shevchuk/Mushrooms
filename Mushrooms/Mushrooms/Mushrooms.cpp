@@ -2,6 +2,8 @@
 #include "Mushrooms.h"
 #include "Mushroom_like.h"
 #include"Oomycetes.h"
+#include"Really_mushroom.h"
+#include"Ascomycetes.h"
 int main()
 {
     setlocale(0, "");
@@ -11,4 +13,8 @@ int main()
     ml.print();
     Oomycetes o;
     o.print();
+    Really_mushroom rm;
+    rm.print();
+    Ascomycetes a;
+    a.print();
 }

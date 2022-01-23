@@ -140,14 +140,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ascomycetes.cpp" />
     <ClCompile Include="Mushrooms.cpp" />
     <ClCompile Include="Mushroom_like.cpp" />
     <ClCompile Include="Oomycetes.cpp" />
+    <ClCompile Include="Really_mushroom.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ascomycetes.h" />
     <ClInclude Include="Mushrooms.h" />
     <ClInclude Include="Mushroom_like.h" />
     <ClInclude Include="Oomycetes.h" />
+    <ClInclude Include="Really_mushroom.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
